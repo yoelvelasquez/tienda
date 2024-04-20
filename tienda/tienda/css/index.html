@@ -1,45 +1,63 @@
 <!DOCTYPE html>
 <html lang="es">
-
+<body>
     <section class="titulo">
-    <img src="./img/logo kobba.jpg" alt="kOBBA" style="width: 80px;">
+    <img src="imagen/Picsart_24-04-07_20-14-03-578.png" alt="KOBBA" style="width: 80px;">
     <h1>KOBBA</h1>
-    <link rel="stylesheet" href="./index.css">
     </section>
-    
+    <style>
+        section.titulo{
+            display:flex;
+            font-family:'Courier New', Courier, monospace;
+            justify-content: center;
+            align.items: center;
+            height: 63px;
+            background-color: green
+        }
+        </style>
     <header>
        
-        <div class="buscador">
+        <class="buscador" style="display: flex;justify-content: center;">
             <input type="text" placeholder="Buscar productos...">
             <button type="submit">Buscar</button>
-        </div>
     </header>
+<head>
 
+</head>
 <body>
     <section class="categorias" style="display: flex;flex-direction: row-reverse;">
     <section>
         <title>inicio de sesion</title>
         <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Ftakeout.google.com%2F%3Fhl%3Des&followup=https%3A%2F%2Ftakeout.google.com%2F%3Fhl%3Des&hl=es&osid=1&passive=1209600&ifkv=ARZ0qKJaYYhsRwXqsgeIcuYDO0uyju_QTuxFhAJeqsvLcaSpYnLvsqfb1y58FxIAjl9tlo2jlnkl&theme=mn&ddm=0&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="cuenta-btn">Mi Cuenta</a>
-        </section> 
-        
-        <select name="categorias">
+        <style>
+            .cuenta-btn {
+                padding: 10px 20px;
+                background-color: #4caf50;
+                color: #fff;
+                border: none;
+                border-radius: 3px;
+                cursor: pointer;
+                font-size: 16px;
+                text-decoration: none;
+            }
+   
+        </style>
+        </section>  <select name="categorias" id="">
     <option value="" disabled selected>Categorias</option>
     <option value="">tecnologia</option>
     <option value="">hogar</option>
     <option value="">moda y belleza</option>
     <option value="">deportes</option>
-    </select>
-
+  </select>
   <select name="pais" id="">
     <option value="" disabled selected>pais</option>
-    <option value="">peru</option>
-    <option value="">colombia</option>
-    <option value="">bolivia</option>
-     <option value="">ecuador</option>
-  </select>
-
+ <option value="">peru</option>
+ <option value="">colombia</option>
+ <option value="">bolivia</option>
+ <option value="">ecuador</option>
+</select>
     <main>
-        <h2>Productos populares</h2>
+            <h2>Productos populares</h2>
         <section class="productos">
         <section>
            
@@ -48,8 +66,7 @@
             <p>Descuento por tu primera compra</p>
             <span>$100</span>
             <button>añadir al carrito</button>
-        </section> 
-
+        </section>
         <section>
             <div class="producto">
                 <img src="https://m.media-amazon.com/images/I/41o89KRJb8L._AC_UF226,226_FMjpg_.jpg" style="width: 200px;height: 247px">
@@ -59,24 +76,19 @@
                     <button>añadir al carrito</button>
             </div>
         </section>
-
-        <section>     
+        <section>      
             <img  src="https://m.media-amazon.com/images/I/41Wy2hc5P2L._AC_UF226,226_FMjpg_.jpg"style="width: 200px; height: 247px;">
                 <h3>Pantalla sansung</h3>
-                <p>Descuento por tu primera compra</p>
                 <span>$100</span>
                 <button>añadir al carrito</button>
         </section>
-
         <section>
                 <img src="https://m.media-amazon.com/images/I/315SVeqKulL._AC_UF226,226_FMjpg_.jpg" style="width: 200px; height: 247px;">
                 <div><h3>Ipad</h3>
                     <p>Descuento por tu primera compra</p>
                     <span>$500</span>    
                 <button>añadir al carrito</button>
-            </div>
         </section>
-
         <section>
                 <img  src="https://m.media-amazon.com/images/I/41u8EDlYMuL._AC_UF226,226_FMjpg_.jpg"style="width: 200px; height: 247px;">
                 <div><h3>Aspiradora inteligente</h3>
@@ -84,7 +96,6 @@
                     <span>$80</span>  
                 <button>añadir al carrito</button></div>
         </section>
-
         <section>
                 <img  src="https://m.media-amazon.com/images/I/41XmH3g0-aL._AC_UF226,226_FMjpg_.jpg"style="width: 200px; height: 247px;">
                 <div><h3>Camara</h3>
@@ -92,7 +103,7 @@
                     <span>$100</span>    
                 <button>añadir al carrito</button>
         </section>
-
+    </section>
     <h2>Categorías</h2>
             <section class="categorias">
                
@@ -110,11 +121,26 @@
                     <img title="" sizes="" srcset="" src="https://minisope.vtexassets.com/assets/vtex.file-manager-graphql/images/6337b72e-f56d-4a46-a0bf-4e6cfee3bffd___1acb3e75750f8b3dd91e3dfd3a4e0a3d.jpg" alt="" style="width: 200px;">
                 </div>
             </section>
+            <style>
+            section.productos {
+                padding: 20px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+            section.categorias {
+                padding: 20px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+            </style>
+    </span>
     </main>
    
     <footer>
         <section class="links">
-        <div>
+        <div class="links">
             <ul>
                 <li>Ayuda</li>
                 <li>Política de privacidad</li>
@@ -130,6 +156,11 @@
         </div>
     </section>
     </footer>
-
+    <style>
+    section.links {
+        display: flex;
+        justify-content:flex-start ;
+    }
+    </style>
 </body>
 </html>
