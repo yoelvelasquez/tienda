@@ -2,57 +2,64 @@
 <html lang="es">
 <body>
     <main>
-        <div class="flex justify-center">
+        <div class="border-8 border-green-600 flex justify-between md:flex justify-center md:flex bg-green-500">
             <img class="w-[80px]" src="./img/logo kobba.jpg" alt="kOBBA">
-            <h1>KOBBA</h1>
-        </div>
-        <header>  
-            <div class="flex justify-center">
-                <input type="text" placeholder="Buscar productos...">
-                <button type="submit">Buscar</button>
-            </div>
-        </header>
-        <section class="flex flex-wrap justify-around">
             <div>
-                <title>inicio de sesion</title>
-                <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Ftakeout.google.com%2F%3Fhl%3Des&followup=https%3A%2F%2Ftakeout.google.com%2F%3Fhl%3Des&hl=es&osid=1&passive=1209600&ifkv=ARZ0qKJaYYhsRwXqsgeIcuYDO0uyju_QTuxFhAJeqsvLcaSpYnLvsqfb1y58FxIAjl9tlo2jlnkl&theme=mn&ddm=0&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="cuenta-btn">Mi Cuenta</a>
-            </div> 
-            <select name="categorias">
-                <option>Categorias</option>
-                <option>tecnologia</option>
-                <option>hogar</option>
-                <option>moda y belleza</option>
-                <option>deportes</option>
-            </select>
-            <select name="pais" id="">
-                <option>pais</option>
-                <option>peru</option>
-                <option>colombia</option>
-                <option>bolivia</option>
-                <option>ecuador</option>
-            </select>
-        </section>
-        <div class="grid grid-cols-4 gap-4 p-10">
-            <div class=""> 
-                    <img class="" src="https://m.media-amazon.com/images/I/31f1MuRSNyL._AC_UF226,226_FMjpg_.jpg">
-                <div class="">
+                <h1 class="text-7xl">KOBBA</h1>
+            </div>
+        </div>
+        <header class="p-4 m-4 md:p-4 md:m-4 md:flex flex-row-reverse">
+            <div class=" md:flex md:justify-center md:rounded-lg ">
+                <div class="bg-blue-500 rounded-lg">
+                    <input class="md:border-2 md:border-blue-600 md:rounded-lg" type="text" placeholder="Buscar productos...">
+                    <button class="md:rounded-lg text-3xl" type="submit">Buscar</button>
+                </div>
+                <div class="mt-4 bg-green-500 rounded-lg text-3xl">
+                    <title>inicio de sesion</title>
+                    <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Ftakeout.google.com%2F%3Fhl%3Des&followup=https%3A%2F%2Ftakeout.google.com%2F%3Fhl%3Des&hl=es&osid=1&passive=1209600&ifkv=ARZ0qKJaYYhsRwXqsgeIcuYDO0uyju_QTuxFhAJeqsvLcaSpYnLvsqfb1y58FxIAjl9tlo2jlnkl&theme=mn&ddm=0&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="cuenta-btn">Mi Cuenta</a>
+                </div>  
+            </div>
+        </header>       
+        <div class="flex justify-between items-center text-3xl">
+            <div class=" md:flex md:py-5 pl-5 pr-20 backdrop-blur-xl">
+                <select class="">
+                    <option disabled selected>Categorias</option>
+                    <option>tecnologia</option>
+                    <option>hogar</option>
+                    <option>moda y belleza</option>
+                    <option>deportes</option>
+                </select>
+                <select class="rounded-lg" name="pais">
+                    <option  disabled selected>pais</option>
+                    <option >peru</option>
+                    <option >colombia</option>
+                    <option >bolivia</option>
+                    <option >ecuador</option>
+                </select>
+            </div>
+        </div>
+        <h2 class="p-5 m-5 text-center">Productos populares</h2>
+        <section class="grid grid-cols-2  md:grid md:grid-cols-4 md:gap-4">
+            <div>
+                <img class="w-[200px] h-[247]" src="https://m.media-amazon.com/images/I/31f1MuRSNyL._AC_UF226,226_FMjpg_.jpg" alt="" style="width: 200px;height: 247px;">
+                <div>
                     <h3>Lentes 3D</h3>
                     <p>Descuento por tu primera compra</p>
                     <span>$100</span>
                     <button>añadir al carrito</button>
                 </div>
             </div> 
-            <div class="">
-                <img class="" src="https://m.media-amazon.com/images/I/41o89KRJb8L._AC_UF226,226_FMjpg_.jpg">
-                <div>
+            <div>
+                <img class="w-[200px] h-[247]" src="https://m.media-amazon.com/images/I/41o89KRJb8L._AC_UF226,226_FMjpg_.jpg">
+                <div class="producto">
                     <h3>Batidora</h3>
                     <p>Descuento por tu primera compra</p>
                     <span>$50</span>
                     <button>añadir al carrito</button>
                 </div>
             </div>
-            <div class="">     
-                <img class="" src="https://m.media-amazon.com/images/I/41Wy2hc5P2L._AC_UF226,226_FMjpg_.jpg">
+            <div>     
+                <img class="w-[200px] h-[247]" src="https://m.media-amazon.com/images/I/41Wy2hc5P2L._AC_UF226,226_FMjpg_.jpg">
                 <div>
                     <h3>Pantalla sansung</h3>
                     <p>Descuento por tu primera compra</p>
@@ -60,8 +67,8 @@
                     <button>añadir al carrito</button>
                 </div>
             </div>
-            <div class="">
-                <img class="" src="https://m.media-amazon.com/images/I/315SVeqKulL._AC_UF226,226_FMjpg_.jpg">
+            <div>
+                <img class="w-[200px] h-[247]" src="https://m.media-amazon.com/images/I/315SVeqKulL._AC_UF226,226_FMjpg_.jpg">
                 <div>
                     <h3>Ipad</h3>
                     <p>Descuento por tu primera compra</p>
@@ -69,8 +76,8 @@
                     <button>añadir al carrito</button>
                 </div>
             </div>
-            <div class="">
-                <img class="" src="https://m.media-amazon.com/images/I/41u8EDlYMuL._AC_UF226,226_FMjpg_.jpg">
+            <div>
+                <img class="w-[200px] h-[247]" src="https://m.media-amazon.com/images/I/41u8EDlYMuL._AC_UF226,226_FMjpg_.jpg">
                 <div>
                     <h3>Aspiradora inteligente</h3>
                     <p>Descuento por tu primera compra</p>
@@ -78,8 +85,8 @@
                     <button>añadir al carrito</button>
                 </div>
             </div>
-            <div class="">
-                <img class="" src="https://m.media-amazon.com/images/I/41XmH3g0-aL._AC_UF226,226_FMjpg_.jpg">
+            <div>
+                <img class="w-[200px] h-[247]" src="https://m.media-amazon.com/images/I/41XmH3g0-aL._AC_UF226,226_FMjpg_.jpg">
                 <div>
                     <h3>Camara</h3>
                     <p>Descuento por tu primera compra</p>
@@ -87,8 +94,8 @@
                     <button>añadir al carrito</button>
                 </div>
             </div>
-            <div class="">
-                <img class="" src="https://m.media-amazon.com/images/I/41XmH3g0-aL._AC_UF226,226_FMjpg_.jpg">
+            <div>
+                <img class="w-[200px] h-[247]" src="https://m.media-amazon.com/images/I/41XmH3g0-aL._AC_UF226,226_FMjpg_.jpg">
                 <div>
                     <h3>Camara</h3>
                     <p>Descuento por tu primera compra</p>
@@ -96,8 +103,8 @@
                     <button>añadir al carrito</button>
                 </div>
             </div>
-            <div class="">
-                    <img class="" src="https://m.media-amazon.com/images/I/41XmH3g0-aL._AC_UF226,226_FMjpg_.jpg">
+            <div>
+                <img class="w-[200px] h-[247]" src="https://m.media-amazon.com/images/I/41XmH3g0-aL._AC_UF226,226_FMjpg_.jpg">
                 <div>
                     <h3>Camara</h3>
                     <p>Descuento por tu primera compra</p>
@@ -105,20 +112,20 @@
                     <button>añadir al carrito</button>
                 </div>
             </div>
+        </section>
+    <h2 class="text-3xl text-center">Categorías</h2>
+    <div >
+        <div class="flex p-5 flex-wrap justify-around">
+            <img class="w-[200px]" src="https://minisope.vtexassets.com/assets/vtex.file-manager-graphql/images/38cf7f4c-4fe5-48e1-9065-7aef6b344c0f___14d631576cca8faade87101e937f73e7.jpg" alt="">
+            <img class="w-[200px]" src="https://minisope.vtexassets.com/assets/vtex.file-manager-graphql/images/fa197787-86b2-4309-bf1c-d3da7ee39c03___ca6be8c8209f380babb6ac48a1bd46ad.jpg" alt="">
+            <img class="w-[200px]" src="https://minisope.vtexassets.com/assets/vtex.file-manager-graphql/images/e2e02a69-dfde-495c-8d5c-2e2dcbc074c1___74c6387dceecff84c2db4f339198ecda.jpg" alt="">
+            <img class="w-[200px]" src="https://minisope.vtexassets.com/assets/vtex.file-manager-graphql/images/a934f2cc-6dd6-40d1-88da-6768fd17201b___d1aacac321213a33cae8a9374d1bc879.jpg" alt="">
+            <img class="w-[200px]" src="https://minisope.vtexassets.com/assets/vtex.file-manager-graphql/images/b1cad9fe-dd0f-464e-a48e-a5681c9eb3df___31ac4755e206c8d23a27a62c62ab2170.jpg" alt="">
+            <img class="w-[200px]" src="https://minisope.vtexassets.com/assets/vtex.file-manager-graphql/images/6337b72e-f56d-4a46-a0bf-4e6cfee3bffd___1acb3e75750f8b3dd91e3dfd3a4e0a3d.jpg" alt="">
         </div>
-         <!-- Aquí se mostrarían las categorias -->
-        <h2 class="text-center">Categorías</h2>
-        <div class="">
-            <div class="flex p-5 flex-wrap justify-around">
-                <img title="" sizes="" srcset="" src="https://minisope.vtexassets.com/assets/vtex.file-manager-graphql/images/38cf7f4c-4fe5-48e1-9065-7aef6b344c0f___14d631576cca8faade87101e937f73e7.jpg" alt="" style="width: 200px;" >
-                <img title="" sizes="" srcset="" src="https://minisope.vtexassets.com/assets/vtex.file-manager-graphql/images/fa197787-86b2-4309-bf1c-d3da7ee39c03___ca6be8c8209f380babb6ac48a1bd46ad.jpg" alt="" style="width: 200px;">
-                <img title="" sizes="" srcset="" src="https://minisope.vtexassets.com/assets/vtex.file-manager-graphql/images/e2e02a69-dfde-495c-8d5c-2e2dcbc074c1___74c6387dceecff84c2db4f339198ecda.jpg" alt="" style="width: 200px;">
-                <img title="" sizes="" srcset="" src="https://minisope.vtexassets.com/assets/vtex.file-manager-graphql/images/a934f2cc-6dd6-40d1-88da-6768fd17201b___d1aacac321213a33cae8a9374d1bc879.jpg" alt="" style="width: 200px;">
-                <img title="" sizes="" srcset="" src="https://minisope.vtexassets.com/assets/vtex.file-manager-graphql/images/b1cad9fe-dd0f-464e-a48e-a5681c9eb3df___31ac4755e206c8d23a27a62c62ab2170.jpg" alt="" style="width: 200px;">
-                <img title="" sizes="" srcset="" src="https://minisope.vtexassets.com/assets/vtex.file-manager-graphql/images/6337b72e-f56d-4a46-a0bf-4e6cfee3bffd___1acb3e75750f8b3dd91e3dfd3a4e0a3d.jpg" alt="" style="width: 200px;">
-            </div>
-        </div>
-        <div class="flex justify-start">
+    </div>   
+    <footer>
+        <div>
             <div>
                 <ul>
                     <li>Ayuda</li>
@@ -126,14 +133,20 @@
                     <li>Términos de servicio</li>
                 </ul>
             </div>
-            <div class="social-media">
+            <div>
                 <ul>
-                    <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW5IrVrlD-vIIXyPYHsjofTu_zzlh7rGQzUBKzgEBXzQ&s" alt="Facebook" style="width: 20px;">Facebook</li>
-                    <li><img src="https://w7.pngwing.com/pngs/446/584/png-transparent-feed-instagram-media-news-social-connection-logo-social-links-icon.png" alt="Instagram" style="width: 20px;">Instagram</li>
-                    <li><img src="https://icones.pro/wp-content/uploads/2021/02/icone-twitter-ronde-noire.png" alt="twitter" style="width: 20px;">Twitter</li>
+                    <li>
+                        <a href="https://www.facebook.com/?locale=es_LA"><img class="w-[20px]" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW5IrVrlD-vIIXyPYHsjofTu_zzlh7rGQzUBKzgEBXzQ&s" alt="Facebook">Facebook</a>
+                    </li>
+                    <a href="https://www.instagram.com/"><img class="w-[20px]" src="https://w7.pngwing.com/pngs/446/584/png-transparent-feed-instagram-media-news-social-connection-logo-social-links-icon.png" alt="Instagram">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="https://x.com/?logout=1716012534998"><img class="w-[20px]" src="https://icones.pro/wp-content/uploads/2021/02/icone-twitter-ronde-noire.png" alt="twitter">Twitter</a>
+                    </li>
                 </ul>
             </div>
         </div>
+    </footer>
     </main>
     <script src="https://cdn.tailwindcss.com"></script>
 </body>
