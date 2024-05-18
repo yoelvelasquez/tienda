@@ -1,8 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <meta property="og:title" content="TIENDA KOBBA"/>
+    <meta property="og:description" content="Bienvenido a KOBBA una tienda online donde encontraras diversos productos en tendencias"/>
+    <meta property="og:image" content="http://127.0.0.1:5501/tienda/tienda/img/logo%20kobba.jpg"/>
+    <meta property="og:type" content="website"/>
+     <meta property="og:keywords" content="Kobba,tienda online, productos en oferta, 100% CONFIABLE">
+
+    </head>
+    
 <body>
     <main>
-        <div class="border-8 border-green-600 flex justify-between md:flex justify-center md:flex bg-green-500">
+        <div class="border-8 border-sky-500 flex justify-between md:flex justify-center md:flex bg-sky-500">
             <img class="w-[80px]" src="./img/logo kobba.jpg" alt="kOBBA">
             <div>
                 <h1 class="text-7xl">KOBBA</h1>
@@ -12,7 +24,7 @@
             <div class=" md:flex md:justify-center md:rounded-lg ">
                 <div class="bg-blue-500 rounded-lg">
                     <input class="md:border-2 md:border-blue-600 md:rounded-lg" type="text" placeholder="Buscar productos...">
-                    <button class="md:rounded-lg text-3xl" type="submit">Buscar</button>
+                    <button class="md:rounded-lg md:text-3xl" type="submit">Buscar</button>
                 </div>
                 <div class="mt-4 bg-green-500 rounded-lg text-3xl">
                     <title>inicio de sesion</title>
@@ -20,7 +32,7 @@
                 </div>  
             </div>
         </header>       
-        <div class="flex justify-between items-center text-3xl">
+        <div class="flex justify-between items-center md:text-3xl">
             <div class=" md:flex md:py-5 pl-5 pr-20 backdrop-blur-xl">
                 <select class="">
                     <option disabled selected>Categorias</option>
@@ -148,6 +160,7 @@
         </div>
     </footer>
     </main>
+    <script src="./style.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
 </body>
 </html>
